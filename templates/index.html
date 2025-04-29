@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alzheimer's Disease Detection</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Alzheimer's Disease Detection</h1>
+        <p>Upload MRI Scan to Predict Alzheimer's Stage</p>
+
+        <label class="upload-box" id="uploadBox">
+            <input type="file" id="imageUpload" accept="image/*">
+            <p>Drag and drop your MRI image here or click to upload.<br> (.JPG, .PNG, .JPEG)</p>
+        </label>
+
+        <button class="analyze-btn" id="analyzeBtn" disabled>Analyze Image</button>
+
+        <div class="result-section" id="resultSection">
+            <img id="previewImage" class="preview" src="" alt="MRI Preview">
+            <h2>Alzheimer's Detected: <span id="stage">Moderate Stage</span></h2>
+            <p>Confidence: <span id="confidence">92%</span></p>
+            <p id="description">Moderate-stage Alzheimer's involves more pronounced memory loss, confusion, and difficulty with daily activities.</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>This tool is for informational purposes only. Please consult a neurologist for clinical diagnosis.</p>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

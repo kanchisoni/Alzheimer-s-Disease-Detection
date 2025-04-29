@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom right, #a2b5f3, #2471f7);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 20px;
+    color: #023792;
+    box-shadow: 0px 10px 25px rgba(34, 8, 153, 0.15);
+    max-width: 640px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.upload-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed #ccc;
+    border-radius: 15px;
+    padding: 40px 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    width: 100%;
+    min-height: 200px; /* <-- This ensures a nice box height even if empty */
+    box-sizing: border-box;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+.upload-box:hover {
+    background-color: #f9f9f9;
+}
+.upload-box input[type='file'] {
+    display: none;
+}
+.upload-box p {
+    margin: 0;
+    font-size: 16px;
+    color: #666;
+    word-wrap: break-word;
+}
+
+
+.analyze-btn {
+    background-color: #2575fc;
+    color: white;
+    padding: 12px 25px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.analyze-btn:disabled {
+    background-color: #aaa;
+    cursor: not-allowed;
+}
+
+.result-section {
+    margin-top: 30px;
+    display: none;
+}
+
+.footer {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #eee;
+    text-align: center;
+}
+
+img.preview {
+    max-width: 100%;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
