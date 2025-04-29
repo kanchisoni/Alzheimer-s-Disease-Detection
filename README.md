@@ -111,10 +111,9 @@ Maximum file size: 16 MB
 Supported formats: PNG, JPG, JPEG
 
 🚧 Future Improvements
-Grad-CAM visualization support
+Grad-CAM visualization support![Screenshot 2025-04-28 202257](https://github.com/user-attachments/assets/ace81db5-32e9-408f-9c13-b753b0d9047c)
+
 
 Batch image upload support
 
 Cloud deployment (Render, AWS, etc.)
-
-Medical disclaimer and data privacy info
